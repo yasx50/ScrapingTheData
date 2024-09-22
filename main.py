@@ -3,10 +3,10 @@ import time
 import FetchingData as fd
 import ScrapingData as sd
 
-app = Flask(__name__)
+main = Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
+@main.route('/', methods=['GET'])
 def show():
     url = 'https://www.emobiletracker.com/'
     path = 'data/scrap.html'
@@ -17,4 +17,4 @@ def show():
     
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    main.run(debug=True)
