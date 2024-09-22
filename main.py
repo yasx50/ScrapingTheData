@@ -11,7 +11,7 @@ def show():
     url = 'https://www.emobiletracker.com/'
     path = 'data/scrap.html'
     fd.fetchAndSaveData(url, path)
-    time.sleep(10)
+    time.sleep(20)
     datas = sd.table_data
     return jsonify(datas)
     
